@@ -1,143 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio de Gerardo Jovel</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <h1>Lorem Ipsum</h1>
-        <nav>
-            <ul>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-            </ul>
-        </nav>
+      <h1>Portafolio de Gerardo Jovel</h1>
+      <nav>
+        <ul>
+          <li><a href="#techs">Tecnologías</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#studies">Estudios</a></li>
+        </ul>
+      </nav>
     </header>
     <body>
-        <div class="container">
-            <section class="banner">
-                <div class="banner-text">
-                    <h2>Un Portafolio Apasionante</h2>
-                    <p>Texto de relleno que esperemos un día se cambie dinámicamente con JS</p>
-                </div>
-                <div class="banner-img">
-                    <img src="imgs/foto.jpg" alt="Foto del desgraciado">
-                </div>
-            </section>
-        </div>
-        <div class="container">
-            <section class="tech-sec">
-                <div class="tech-title">
-                    <h2>Tecnologías</h2>
-                    <p>Cada desarrollador es único, y tiene su propio conjunto de tecnologías con las que se identifica</p>
-                </div>
-                <div class="tech-grid">
-                    <div class="tech-card" id="python-card">
-                        <div>
-                            <h4>Python</h4>
-                            <img src="" alt="">
-                        </div>
-                        <p>Líneas programadas: XXX</p>
-                        <div>
-                            <h5>
-                                Proyectos programados
-                            </h5>
-                            <ul>
-                                <li>Primer Proyectos</li>
-                                <li>Segundo Proyectos</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tech-card" id="javascript-card">
-                        <div>
-                            <h4>Javascript</h4>
-                            <img src="" alt="">
-                        </div>
-                        <p>Líneas programadas: XXX</p>
-                        <div>
-                            <h5>
-                                Proyectos programados
-                            </h5>
-                            <ul>
-                                <li>Primer Proyectos</li>
-                                <li>Segundo Proyectos</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tech-card" id="csharp-card">
-                        <div>
-                            <h4>C#</h4>
-                            <img src="" alt="">
-                        </div>
-                        <p>Líneas programadas: XXX</p>
-                        <div>
-                            <h5>
-                                Proyectos programados
-                            </h5>
-                            <ul>
-                                <li>Primer Proyectos</li>
-                                <li>Segundo Proyectos</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tech-card" id="java-card">
-                        <div>
-                            <h4>Java</h4>
-                            <img src="" alt="">
-                        </div>
-                        <p>Líneas programadas: XXX</p>
-                        <div>
-                            <h5>
-                                Proyectos programados
-                            </h5>
-                            <ul>
-                                <li>Primer Proyectos</li>
-                                <li>Segundo Proyectos</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tech-card" id="random-card">
-                        <div>
-                            <h4>Random</h4>
-                            <img src="" alt="">
-                        </div>
-                        <p>Líneas programadas: XXX</p>
-                        <div>
-                            <h5>
-                                Proyectos programados
-                            </h5>
-                            <ul>
-                                <li>Primer Proyectos</li>
-                                <li>Segundo Proyectos</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tech-card" id="random-card2">
-                        <div>
-                            <h4>Random2</h4>
-                            <img src="" alt="">
-                        </div>
-                        <p>Líneas programadas: XXX</p>
-                        <div>
-                            <h5>
-                                Proyectos programados
-                            </h5>
-                            <ul>
-                                <li>Primer Proyectos</li>
-                                <li>Segundo Proyectos</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+      <div class="container">
+        <section class="banner">
+          <div class="banner-text">
+            <h2>Un Portafolio Apasionante</h2>
+            <div>
+                <p>Acerca de alguien</p><p id="other-texts"></p>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="imgs/foto.jpg" alt="Foto del desgraciado" />
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <section id="techs" class="tech-sec">
+          <div class="tech-title">
+            <h2>Tecnologías</h2>
+            <p>
+              Cada desarrollador es único, y tiene su propio conjunto de
+              tecnologías con las que se identifica
+            </p>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-card horizontal-tech-card" id="python-card">
+              <div class="logo">
+                <img src="imgs/python.png" alt="" />
+                <h4>Python</h4>
+                <p>Nivel: Principiante</p>
+              </div>
+              <div>
+                <h5>Desarrollo:</h5>
+                <ul>
+                  <li>Paquete para cifrar y descifrar usando el cifrado César</li>
+                  <li>Paquete para el trabajo con grafos</li>
+                  <li>Varios ejercicios de programación competitiva</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tech-card vertical-tech-card" id="javascript-card">
+              <div class="logo">
+                <img src="imgs/javascript.jpg" alt="" />
+                <h4>Javascript</h4>
+                <p>Nivel: Principiante</p>
+              </div>
+              <div>
+                <h5>Desarrollo:</h5>
+                <ul>
+                  <li>Programación Frontend de aplicaciones WEB</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tech-card" id="csharp-card">
+              <div class="logo">
+                <img src="imgs/csharp.svg" alt="" />
+                <h4>C#</h4>
+                <p>Nivel: Principiante</p>
+              </div>
+              <div>
+                <h5>Desarrollo:</h5>
+                <ul>
+                  <li>Desarrollo de aplicaciones de escritorio para Windows</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tech-card" id="java-card">
+              <div class="logo">
+                <img src="imgs/java.svg" alt="" />
+                <h4>Java</h4>
+                <p>Nivel: Principiante</p>
+              </div>
+              <div>
+                <h5>Desarrollo:</h5>
+                <ul>
+                  <li>Backend para una aplicación web utilizando SpringBoot</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tech-card" id="haskell-card">
+              <div class="logo">
+                <img src="imgs/haskell.png" alt="" />
+                <h4>Haskell</h4>
+                <p>Nivel: Principiante</p>
+              </div>
+              <div>
+                <h5>Desarrollo:</h5>
+                <ul>
+                  <li>Prácticas de programación funcional</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tech-card horizontal-tech-card" id="sql-card">
+              <div class="logo">
+                <img src="imgs/sql.png" alt="" />
+                <h4>SQL</h4>
+                <p>Nivel: Principiante</p>
+              </div>
+              <div>
+                <h5>Desarrollo:</h5>
+                <ul>
+                  <li>Diseño y gestión de bases de datos relacionales</li>
+                  <li>Uso de sqlServer y Oracle</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container half-container">
+        <section id="experience">
+            <h2>Experiencia</h2>
+            <div class="fill-card">
+                <h4>Trabajo en las bodegas de la DOE</h4>
+                <p>Apoyo Logístico en Revisión de Equipo de Transmisión Electoral - Noviembre/Diciembre del 2025</p>
+            </div>
+        </section>
+        <section id="studies">
+            <h2>Estudios</h2>
+            <div class="fill-card">
+                <h4>Instituto Técnico Ricaldone</h4>
+                <p>Bachillerato Técnico Vocacional en Desarrollo de Software - 2024/Actualidad</p>
+        </section>
+      </div>
     </body>
     <footer>
+        <ul>
+            <li>Correo electrónico: gerardo.jovelfranco@gmail.com</li>
+            <li>WhatsApp: +503 6922-5140</li>
+            <li>Instagram: @GerundioDonas</li>
+        </ul>
+        <p>&copy 2024 Gerardo Jovel Franco</p>
     </footer>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
